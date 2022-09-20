@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-<<<<<<< HEAD
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-=======
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
->>>>>>> develop
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -16,11 +12,7 @@
 	<artifactId>cartera</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cartera</name>
-<<<<<<< HEAD
 	<description>Proyecto Demo Misión TIC Ciclo 3 2022</description>
-=======
-	<description>Demo project for Spring Boot</description>
->>>>>>> develop
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -41,7 +33,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-<<<<<<< HEAD
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -60,8 +51,6 @@
 			<version>2.2</version>
 		</dependency>
 
-=======
->>>>>>> develop
 	</dependencies>
 
 	<build>
@@ -74,11 +63,8 @@
 	</build>
 
 </project>
-<<<<<<< HEAD
 
 
 
 
 
-=======
->>>>>>> develop

@@ -1,6 +1,5 @@
 package co.gov.mintic.cartera.entities;
 
-<<<<<<< HEAD
 import javax.persistence.*;
 
 @Entity
@@ -13,11 +12,6 @@ public class RoleEntity {
     @Column(name = "description")
     private String description;
     @Column(name = "status")
-=======
-public class RoleEntity {
-    private long idRole;
-    private String description;
->>>>>>> develop
     private boolean status;
 
     public long getIdRole() {

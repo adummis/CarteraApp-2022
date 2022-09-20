@@ -1,6 +1,5 @@
 package co.gov.mintic.cartera.entities;
 
-<<<<<<< HEAD
 import java.util.Date;
 
 import javax.persistence.*;
@@ -21,16 +20,6 @@ public class UserEntity {
     @Column(name = "create_at")
     private Date createdAt;
     @Column(name = "status")
-=======
-import java.time.LocalDate;
-
-public class UserEntity {
-    private long idUser;
-    private String username;
-    private String _password;
-    private String email;
-    private LocalDate createdAt;
->>>>>>> develop
     private boolean status;
 
     public long getIdUser() {
@@ -65,19 +54,11 @@ public class UserEntity {
         this.email = email;
     }
 
-<<<<<<< HEAD
     public Date getCreatedAt() {
         return createdAt;
     }
 
     public void setCreatedAt(Date createdAt) {
-=======
-    public LocalDate getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(LocalDate createdAt) {
->>>>>>> develop
         this.createdAt = createdAt;
     }
 

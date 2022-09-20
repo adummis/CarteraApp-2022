@@ -1,6 +1,5 @@
 package co.gov.mintic.cartera.entities;
 
-<<<<<<< HEAD
 import javax.persistence.*;
 
 @Entity
@@ -15,12 +14,6 @@ public class DocumentTypeEntity {
     @Column(name = "acronym", nullable = false)
     private String acronym;
     @Column(name = "status")
-=======
-public class DocumentTypeEntity {
-    private long idDocumentType;
-    private String description;
-    private String acronym;
->>>>>>> develop
     private boolean status;
 
     public long getIdDocumentType() {
