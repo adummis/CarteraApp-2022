@@ -4,7 +4,11 @@ import co.gov.mintic.cartera.entities.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+<<<<<<< HEAD
 import java.util.Date;
+=======
+import java.time.LocalDate;
+>>>>>>> develop
 
 @SpringBootApplication
 public class CarteraApplication {
@@ -33,7 +37,11 @@ public class CarteraApplication {
 		user1.setUsername("jaimebrand");
 		user1.set_password("123456");
 		user1.setEmail("jaimebrand@gmail.com");
+<<<<<<< HEAD
 		user1.setCreatedAt(new Date());
+=======
+		user1.setCreatedAt(LocalDate.now());
+>>>>>>> develop
 		user1.setStatus(true);
 
 		UserEntity user2 = new UserEntity();
@@ -41,7 +49,11 @@ public class CarteraApplication {
 		user2.setUsername("edsonyair");
 		user2.set_password("123456");
 		user2.setEmail("edsonyair@gmail.com");
+<<<<<<< HEAD
 		user2.setCreatedAt(new Date());
+=======
+		user2.setCreatedAt(LocalDate.now());
+>>>>>>> develop
 		user2.setStatus(true);
 
 		EnterpriseEntity enterprise = new EnterpriseEntity();
@@ -51,6 +63,10 @@ public class CarteraApplication {
 		enterprise.setPhone("7777777777");
 		enterprise.setDocumentType(documentType2);
 		enterprise.setDocumentNumber("123123123-3");
+<<<<<<< HEAD
+=======
+		enterprise.setCreatedAt(LocalDate.now());
+>>>>>>> develop
 		enterprise.setStatus(true);
 
 		System.out.println("");
@@ -81,7 +97,11 @@ public class CarteraApplication {
 		EmployeeEntity employee1 = new EmployeeEntity();
 		employee1.setIdEmployee(1);
 		employee1.setName("Jaime");
+<<<<<<< HEAD
 		employee1.setLastname("Díaz");
+=======
+		employee1.setSurname("Díaz");
+>>>>>>> develop
 		employee1.setDocumentType(documentType1);
 		employee1.setDocumentNumber("4545454545");
 		employee1.setAddress("Centro, Pereira");
@@ -90,12 +110,20 @@ public class CarteraApplication {
 		employee1.setRole(role1);
 		employee1.setProfile(profile1);
 		employee1.setUser(user1);
+<<<<<<< HEAD
+=======
+		employee1.setCreatedAt(LocalDate.now());
+>>>>>>> develop
 		employee1.setStatus(true);
 
 		EmployeeEntity employee2 = new EmployeeEntity();
 		employee2.setIdEmployee(2);
 		employee2.setName("Yair");
+<<<<<<< HEAD
 		employee2.setLastname("Muñoz");
+=======
+		employee2.setSurname("Muñoz");
+>>>>>>> develop
 		employee2.setDocumentType(documentType1);
 		employee2.setDocumentNumber("1212121212");
 		employee2.setAddress("Centro, Quibdó");
@@ -104,12 +132,20 @@ public class CarteraApplication {
 		employee2.setRole(role2);
 		employee2.setProfile(profile2);
 		employee2.setUser(user2);
+<<<<<<< HEAD
+=======
+		employee2.setCreatedAt(LocalDate.now());
+>>>>>>> develop
 		employee2.setStatus(true);
 
 		System.out.println("");
 		System.out.println("ID de Empleado: " + employee1.getIdEmployee());
 		System.out.println("Nombre: " + employee1.getName());
+<<<<<<< HEAD
 		System.out.println("Apellido: " + employee1.getLastname());
+=======
+		System.out.println("Apellido: " + employee1.getSurname());
+>>>>>>> develop
 		System.out.println("Email: " + employee1.getUser().getEmail());
 		System.out.println("Tipo de Documento: " + employee1.getDocumentType().getAcronym());
 		System.out.println("Número de Documento: " + employee1.getDocumentNumber());
@@ -130,7 +166,11 @@ public class CarteraApplication {
 		System.out.println("");
 		System.out.println("ID de Empleado: " + employee2.getIdEmployee());
 		System.out.println("Nombre: " + employee2.getName());
+<<<<<<< HEAD
 		System.out.println("Apellido: " + employee2.getLastname());
+=======
+		System.out.println("Apellido: " + employee2.getSurname());
+>>>>>>> develop
 		System.out.println("Email: " + employee2.getUser().getEmail());
 		System.out.println("Tipo de Documento: " + employee2.getDocumentType().getAcronym());
 		System.out.println("Número de Documento: " + employee2.getDocumentNumber());
@@ -153,12 +193,20 @@ public class CarteraApplication {
 		transaction1.setAmount(1500000.00F);
 		transaction1.setTransactionConcept("Venta de computador");
 		transaction1.setEmployee(employee2);
+<<<<<<< HEAD
+=======
+		transaction1.setCreatedAt(LocalDate.now());
+>>>>>>> develop
 
 		System.out.println("");
 		System.out.println("Id Movimiento de Dinero: " + transaction1.getIdTransaction());
 		System.out.println("Monto: " + "$ " + transaction1.getAmount());
 		System.out.println("Concepto: " + transaction1.getTransactionConcept());
+<<<<<<< HEAD
 		System.out.println("Usuario que realizó el movimiento: " + transaction1.getEmployee().getName() + " " + transaction1.getEmployee().getLastname());
+=======
+		System.out.println("Usuario que realizó el movimiento: " + transaction1.getEmployee().getName() + " " + transaction1.getEmployee().getSurname());
+>>>>>>> develop
 		System.out.println("Rol del Usuario: " + transaction1.getEmployee().getRole().getDescription());
 		System.out.println("Fecha de creación movimiento: " + transaction1.getCreatedAt());
 
@@ -167,12 +215,20 @@ public class CarteraApplication {
 		transaction2.setAmount(-500000.00F);
 		transaction2.setTransactionConcept("Pago recibo de energía");
 		transaction2.setEmployee(employee1);
+<<<<<<< HEAD
+=======
+		transaction2.setCreatedAt(LocalDate.now());
+>>>>>>> develop
 
 		System.out.println("");
 		System.out.println("Id Movimiento de Dinero: " + transaction2.getIdTransaction());
 		System.out.println("Monto: " + "$ " + transaction2.getAmount());
 		System.out.println("Concepto: " + transaction2.getTransactionConcept());
+<<<<<<< HEAD
 		System.out.println("Usuario que realizó el movimiento: " + transaction2.getEmployee().getName() + " " + transaction2.getEmployee().getLastname());
+=======
+		System.out.println("Usuario que realizó el movimiento: " + transaction2.getEmployee().getName() + " " + transaction1.getEmployee().getSurname());
+>>>>>>> develop
 		System.out.println("Rol del Usuario: " + transaction2.getEmployee().getRole().getDescription());
 		System.out.println("Fecha de creación movimiento: " + transaction2.getCreatedAt());
 	}

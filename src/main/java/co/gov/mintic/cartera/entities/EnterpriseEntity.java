@@ -1,5 +1,6 @@
 package co.gov.mintic.cartera.entities;
 
+<<<<<<< HEAD
 import javax.persistence.*;
 import java.time.LocalDate;
 @Entity
@@ -23,6 +24,18 @@ public class EnterpriseEntity {
     @Column(name = "created_at")
     private LocalDate createdAt;
     @Column(name = "status")
+=======
+import java.time.LocalDate;
+
+public class EnterpriseEntity {
+    private long idEnterprise;
+    private String name;
+    private String address;
+    private String phone;
+    private DocumentTypeEntity documentType;
+    private String documentNumber;
+    private LocalDate createdAt;
+>>>>>>> develop
     private boolean status;
 
     public long getIdEnterprise() {

@@ -1,5 +1,6 @@
 package co.gov.mintic.cartera.entities;
 
+<<<<<<< HEAD
 import javax.persistence.*;
 import java.time.LocalDate;
 
@@ -35,6 +36,22 @@ public class EmployeeEntity {
     @JoinColumn(name = "id_user")
     private UserEntity user;
     @Column(name = "create_at")
+=======
+import java.time.LocalDate;
+
+public class EmployeeEntity {
+    private long idEmployee;
+    private String name;
+    private String surname;
+    private DocumentTypeEntity documentType;
+    private String documentNumber;
+    private String address;
+    private String phone;
+    private EnterpriseEntity enterprise;
+    private RoleEntity role;
+    private ProfileEntity profile;
+    private UserEntity user;
+>>>>>>> develop
     private LocalDate createdAt;
     private boolean status;
 
@@ -54,12 +71,21 @@ public class EmployeeEntity {
         this.name = name;
     }
 
+<<<<<<< HEAD
     public String getLastname() {
         return lastname;
     }
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
+=======
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+>>>>>>> develop
     }
 
     public DocumentTypeEntity getDocumentType() {
@@ -147,7 +173,11 @@ public class EmployeeEntity {
         return "EmployeeEntity{" +
                 "idEmployee=" + idEmployee +
                 ", name='" + name + '\'' +
+<<<<<<< HEAD
                 ", surname='" + lastname + '\'' +
+=======
+                ", surname='" + surname + '\'' +
+>>>>>>> develop
                 ", documentType=" + documentType +
                 ", documentNumber='" + documentNumber + '\'' +
                 ", address='" + address + '\'' +

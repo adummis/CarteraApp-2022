@@ -1,5 +1,6 @@
 package co.gov.mintic.cartera.entities;
 
+<<<<<<< HEAD
 import javax.persistence.*;
 import java.util.Date;
 
@@ -19,6 +20,16 @@ public class TransactionEntity {
     private EmployeeEntity employee;
     @Column(name = "created_at")
     private Date createdAt;
+=======
+import java.time.*;
+
+public class TransactionEntity {
+    private long idTransaction;
+    private float amount;
+    private String transactionConcept;
+    private EmployeeEntity employee;
+    private LocalDate createdAt;
+>>>>>>> develop
 
     public long getIdTransaction() {
         return idTransaction;
@@ -52,11 +63,19 @@ public class TransactionEntity {
         this.employee = employee;
     }
 
+<<<<<<< HEAD
     public Date getCreatedAt() {
         return createdAt;
     }
 
     public void setCreatedAt(Date createdAt) {
+=======
+    public LocalDate getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDate createdAt) {
+>>>>>>> develop
         this.createdAt = createdAt;
     }
 
